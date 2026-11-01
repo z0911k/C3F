@@ -1,7 +1,5 @@
 # C3F
 
-Minimal implementation of **Cross-Country Conditional Forecasting (C3F)** for G7 monthly CPI forecasting. It contains the final model and the data needed to run it.
-
 ## Run
 
 Python 3.10–3.13, with CPU execution. From this directory:
@@ -40,5 +38,3 @@ Each country has a 61-parameter linear base, trained for 80 epochs on a 60-dimen
 Normalization uses observations before each forecast month. Input gaps are forward filled from past observations; missing CPI targets are excluded from training and historical error labels. Observed CPI values in the output are included for checking forecasts and are not used as forecast inputs.
 
 The data snapshot uses the revised values collected for the paper in October 2026. Source providers retain their rights to the underlying series; their access and reuse terms apply.
-
-Authors: Mengxin Guan and Kangkang Zhou.
